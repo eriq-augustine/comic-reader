@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="data:,">
+
+        <link rel="stylesheet" href="css/vendor/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="text/javascript" src="js/vendor/zip.js/zip.min.js"></script>
+
+        <script type="module" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class='page'>
+            <div class='reader-container' style='width: 800px; height: 90vh'>
+                <div class='comic-reader'>
+                    <div class='controls'>
+                        <div class='control control-fit'>
+                            <form class='control-fit-form'>
+                                <legend>Fit:</legend>
+
+                                <label for='control-fit-page'>Page</label>
+                                <input type='radio' name='control-fit' id='control-fit-page' value='page' checked />
+
+                                <label for='control-fit-width'>Width</label>
+                                <input type='radio' name='control-fit' id='control-fit-width' value='width' />
+
+                                <label for='control-fit-none'>None</label>
+                                <input type='radio' name='control-fit' id='control-fit-none' value='none' />
+                            </form>
+                        </div>
+
+                        <div class='control control-seamless'>
+                            <form class='control-seamless-form'>
+                                <legend>Seamless:</legend>
+                                <input type='checkbox' name='control-seamless' id='control-seamless' checked />
+                            </form>
+                        </div>
+
+                        <div class='control control-page'>
+                            <form class='control-page-form'>
+                                <legend>Page:</legend>
+                                <input type='number' name='control-page' id='control-page' min='1' value='1' />
+                                <span> / </span><span class='page-count'>?</span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class='images'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
